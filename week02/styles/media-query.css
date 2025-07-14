@@ -24,7 +24,6 @@ body {
 h1 {
    
     padding: 3rem;
-    font-optical-sizing: auto;
     color: var(--smoky-black);
     gap: 2rem;
     
@@ -56,7 +55,7 @@ main{
 section {
     padding: 2rem;
     background-color: var(--ghost-white);
-    border: 2px var(--celtic-blue);
+    border: 2px solid var(--celtic-blue);
     border-radius: 5px ;
 
 }

@@ -1,5 +1,5 @@
 @media (min-width: 500px) {
-  /* Styles here will apply when the viewport is 500px or wider */
+
   main {
     background-color: lightblue;
     grid-template-columns: repeat(2, 1fr); /* Example: 2-column grid at wider screens */
@@ -15,4 +15,6 @@
   footer{
     text-align: left;
 }
+
 }
+
