@@ -29,7 +29,7 @@ header h1 {
  #menu-list li a {
     text-decoration: none;
     color: var(--aquamarine);
-    font-weight: regular;
+    font-weight: 500;
 }
 .menu-toggle {
     display: none; /* Hide the hamburger on large screens */
@@ -54,3 +54,4 @@ header h1 {
 }
 
 }
+
