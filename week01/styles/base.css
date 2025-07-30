@@ -1,0 +1,161 @@
+/* Root variables */
+:root {
+  --charcoal: #2e4057;
+  --snow: #fcf7f8;
+  --light-sea-green: #bfd1d1;
+
+  --font-family: "Lato", sans-serif;
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: var(--font-family);
+  font-weight: 300;
+  background-color: var(--snow);
+  color: var(--charcoal);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+/* Header */
+header {
+  background-color: var(--charcoal);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+nav ul li a {
+  color: var(--snow);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main headings */
+main h2 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: var(--snow);
+  background-color: var(--charcoal);
+}
+
+/* Cards container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  min-width: 300px;
+}
+
+/* ✅ About Me is wider (2 parts) */
+.card.about-me {
+  flex: 2 1 60%;
+}
+
+/* ✅ Web Dev Resources is narrower (1 part) */
+.card.web-resources {
+  flex: 1 1 30%;
+}
+
+/* Layout for image and paragraph */
+.about-section {
+  display: flex;
+  gap: 1rem;
+  align-items: left;
+  margin-bottom: 1rem;
+}
+
+.about-section img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.location-section {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.location-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal);
+  margin-left: 8rem;
+}
+
+.location-section img {
+  width: 120px;
+  height: auto;
+}
+.card.web-resources ul {
+    margin-top:5rem ;
+    margin-left: 2rem;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--charcoal);
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,20 @@
+@media (min-width: 500px) {
+
+  main {
+    background-color: lightblue;
+    grid-template-columns: repeat(2, 1fr); /* Example: 2-column grid at wider screens */
+  }
+  header {
+    background: black;
+    color: white;
+  }
+
+  header h1 {
+    color: white;
+  }
+  footer{
+    text-align: left;
+}
+
+}
+
