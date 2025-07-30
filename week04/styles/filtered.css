@@ -1,0 +1,164 @@
+:root {
+--cornflower-blue: #7692ffff;
+--persian-blue: #2541b2ff;
+--aquamarine: #f6fdfb;
+--eerie-black: #191919ff;
+--moonstone: #08a4bdff;
+
+--font-family: "Lato", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  background-color: white;
+ 
+}
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h1 {
+   
+    padding: 2rem;
+    color: var(--aquamarine);
+  
+    
+}
+
+header, main, footer {
+    max-width:640px;
+    margin:1rem auto;
+    padding:1rem;
+    background-color:var(--aquamarine);
+    color: var(--persian-blue);
+}
+header {
+background-color: var(--persian-blue);
+display: flex;
+text-align: center;
+position: relative;
+}
+
+#menu-list {
+  display: none; /* hides the menu */
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  background-color:var(--aquamarine);
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+
+#menu-list.show {
+  display: flex; /* shows the menu when 'show' class is added */
+  
+}
+
+#menu-list li {
+  padding: 0.5rem;
+}
+
+#menu-toggle {
+  background-color:var(--persian-blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 0;
+}
+ nav ul {
+  justify-content: center;
+  gap: 1rem; /* Reduce from 1.5rem or more */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: #191919;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+  }
+
+  /* Hover effect */
+  nav li a:hover {
+    background-color: #08a4bd; /* Moonstone */
+    color: rgb(18, 16, 16);
+  }
+
+  /* Optional: for mobile hamburger menu appearance */
+  .mobile-nav ul {
+    flex-direction: column;
+  }
+  .page-title {
+    color: var(--eerie-black);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 700;
+  }
+
+.temples-gallery img {
+    height: auto;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+} 
+
+.temples-gallery figure {
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.temple-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--persian-blue);
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+
+    
