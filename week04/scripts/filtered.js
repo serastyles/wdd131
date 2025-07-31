@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dedicated: "2024, July, 14",
   area: 17300,
   imageUrl:
-   "https://www.ldsliving.com/media/W1siZiIsIjIwMjQvMDcvMTYvMTVfMjNfNTJfMzA2X05haXJvYmlfS2VueWFfVGVtcGxlX1Bhbm9yYW1pY19GaXJzdF9Mb29rLmpwZyJdLFsicCIsInRodW1iIiwiMjgwMHg/IiwiY29udmVydCJdXQ/Nairobi_Kenya_Temple_Panoramic_First_Look.jpg" 
+       "https://www.churchofjesuschrist.org/imgs/xbrnlkgvoumomut7itk86rrpepzrej7pax1mvuzz/full/200%2C/0/default"
 },
 
 {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dedicated: "2019, April, 14",
   area: 12000,
   imageUrl:
-    "https://churchofjesuschrist.org/imgs/4f285348e87e11edb23aec1c234c86c86d05e7f2/full/640%2C/0/default"
+    "https://churchofjesuschrist.org/imgs/8cae06798bb811ec8827eeeeac1ee76df4b07c85/full/500%2C/0/default"
 }
   
 ];
