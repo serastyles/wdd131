@@ -4,19 +4,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: left;
-    padding: 1rem 2rem;
-    
+    padding: 1rem 2rem; 
  }
+  
+ header, main, footer {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem;
+  }
+
 .mobile-nav {
     order: 2; /* Nav on the left */
 }
 header h1 {
     order: 1; /* Title on the right */
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--aquamarine);
     margin-left: auto;
     text-align: left;
+    margin: 0;
   }
     #menu-list {
     display: flex;
@@ -29,7 +35,7 @@ header h1 {
  #menu-list li a {
     text-decoration: none;
     color: var(--aquamarine);
-    font-weight: 500;
+    font-weight: 600;
 }
 .menu-toggle {
     display: none; /* Hide the hamburger on large screens */
@@ -66,6 +72,7 @@ header h1 {
     display: flex !important;
     flex-direction: row;
     gap: 1rem;
+    background-color: transparent;
   }
 }
 .temple-card:hover {
@@ -73,7 +80,11 @@ header h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
-
+.card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2rem;
+    gap: 2rem;
+  }
 
 
 }
