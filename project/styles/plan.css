@@ -1,0 +1,201 @@
+:root {
+  --primary: #0d3810;
+  --secondary: #FBC02D;
+  --accent: #BF360C;
+  --background: #FAF9F6; /* soft cream */
+  --text: #212121;        /* accessible dark gray */
+  --font-main: 'Lato', sans-serif;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- HEADER STYLES ---------- */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+/* Mobile layout: stacked title and menu button */
+header h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide menu list by default on mobile */
+#menu-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#menu-list li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+#menu-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+/* ---------- WIDE VIEW ---------- */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  header h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  #menu-list {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+  }
+}
+
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#menu-list {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+#menu-list li {
+  margin: 0.5rem 0;
+}
+
+#menu-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+section img {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* General styling for the wireframes section */
+.wireframes {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.wireframes h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Styling the wireframe images */
+.wireframe-img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color:var(--primary);
+  color: white;
+  font-size: 0.9rem;
+}
+
