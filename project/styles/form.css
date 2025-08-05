@@ -20,7 +20,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  
 }
 
 body {
@@ -98,9 +98,10 @@ input[type="radio"] {
 .italic {
 font-style: italic;
 font-weight: 300;
+color: var(--color-accent);
 }
 .note {
-  color: var(--color-bg-headings); 
+  color: #721d63; 
   font-style: italic;
   font-weight: 400;
   font-size: 0.95rem;
